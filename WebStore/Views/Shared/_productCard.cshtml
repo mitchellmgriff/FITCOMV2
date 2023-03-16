@@ -1,0 +1,30 @@
+﻿@model Product
+
+            <div class="col text-white-50">
+                <div class="card product-card shadow-lg">
+                    <img src="@Model.ImageUrl" class="card-img-top pic" alt="@Model.Name">
+                    <div class="card-body product-button">
+                        <h4 class="d-grid">
+                            <a class="btn btn-dark"
+                            asp-controller="ShoppingCart"
+                            asp-action="AddToShoppingCart"
+                            asp-route-productId="@Model.ProductId">+ Add to cart</a>
+                        </h4>
+
+                        <div class="d-flex justify-content-between mt-2">
+                            <h2 class="text-start price">
+                                <a class="btn view btn-outline-dark" asp-controller="Product"
+                                    asp-action="Details"
+                                    asp-route-id="@Model.ProductId">
+                                    View Details
+                                </a>
+
+                            </h2>
+                            <h5 class="text-nowrap price">
+                                @Model.Price.ToString("c")
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        

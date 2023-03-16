@@ -1,0 +1,78 @@
+html {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+       
+       
+    }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.navbar {
+   background-color:black;
+
+}
+body{
+   background-color:#C0B3A0;
+}
+
+.banner{
+    margin-top:87px;
+    width:100%;
+    height:350px;
+
+}
+.price {
+    color: #22252C;
+}
+.product-link{
+    text-decoration: none;
+    font-family:Verdana;
+    color:#3C3C3C;
+    font-size:20px;
+}
+.card{
+    background-color:#efd9c1;
+    width: 270px;
+    margin-left: 10%; 
+}
+.shopping-cart-card {
+    width: 70%;
+    background-color: #f5f0e8;
+}
+.view {
+    width: 100%;
+    color:black;
+    
+}
+.header {
+    color:#000000;
+    
+}
+.nav-item {
+    color: #22252C;
+}
+
+.login {
+    margin-left: 750px;
+}
+.pic {
+    width: 270px;
+    height: 380px;
+}
+.shop {
+    margin-left: 80px;
+}
+

@@ -1,0 +1,28 @@
+﻿@model HomeViewModel
+
+
+<div class="shadow-lg">
+    <img src="/images/fitcombanner4.png" class="banner"/>
+
+</div>
+
+
+    <br />
+<hr class="w-25" />
+    <h5 class="display-6">New Releases</h5>
+<hr class="w-25" />
+    
+    
+
+    <div class="row product-of-the-week">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var product in Model.ProductOfTheWeek)
+            {
+                <partial name="_productCardHome" model="product"/>
+            }
+        </div>
+
+    </div>
+
+
+
