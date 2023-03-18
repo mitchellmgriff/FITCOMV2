@@ -11,7 +11,12 @@ html {
        
     }
 }
-
+.detail {
+    margin-left:50px;
+}
+.detail1{
+    margin-left:50%;
+}
 html {
   position: relative;
   min-height: 100%;

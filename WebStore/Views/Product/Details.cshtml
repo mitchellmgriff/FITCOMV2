@@ -1,19 +1,33 @@
 ﻿@model Product
 
-<h3 class="my-5">
-    @Model.Name
-</h3>
 
-<div class="row gx-5">
+<p class="mt-5" style="margin-top:100px;"></p>
+<div class="row gx-5 pt-lg-5">
     <img alt="@Model.Name" src="@Model.ImageUrl" class="img-fluid col-5" />
     <div class="col-7">
-       
-        <p>@Model.Description</p>
-        <h3 class="pull-right">@Model.Price.ToString("c")</h3>
-        <div class="addToCart">
-            <p class="button">
+<div class="card w-100 mx-auto">
+    <div class="card-header">
+  <h1 class="display-4">@Model.Name</h1>
+  </div>
+  <div class="card-body">
+  <p class="lead">@Model.Description</p>
+            </div>
 
-            </p>
+            <div class="card-footer">
+      <div class="row">
+      <div class="col-6 mx-auto">
+                        <a class="btn btn-dark w-100 detail"
+                           asp-controller="ShoppingCart"
+                           asp-action="AddToShoppingCart"
+                           asp-route-productId="@Model.ProductId">+ Add to cart</a>
+                    
+                </div>
+                <div class="col-6">
+                        <h3 class="detail1">@Model.Price.ToString("c")</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        
         </div>
     </div>
-</div>

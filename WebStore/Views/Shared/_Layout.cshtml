@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebStore</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="~/lib/bootstrap/bootstrap.js"></script>
+    <script src="~/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <script src="~/lib/jquery/jquery.js"></script>
+
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebStore.styles.css" asp-append-version="true" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +26,7 @@
                      aria-label="Ecommerce Shop">
                     <div class="container-xl">
                         <a class="navbar-brand">
-                            <img src="/images/fitcomhead.png" asp-controlle="Home" asp-action="Index" width="115" height="40" class="d-inline-block align-top mb-2 mt-1"
+                            <img src="/images/fitcomhead.png" asp-controller="Home" asp-action="Index" width="115" height="40" class="d-inline-block align-top mb-2 mt-1"
                                  alt="Logo">
                         </a>
 
@@ -44,7 +48,7 @@
                                 <a asp-controller="Home" asp-action="Index" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a asp-controller="Product" asp-action="List" class="nav-link">Contact</a>
+                                <a asp-controller="Contact" asp-action="Index" class="nav-link">Contact</a>
                             </li>
 
                           

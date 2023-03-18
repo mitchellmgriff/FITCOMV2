@@ -18,66 +18,90 @@
                 (
                               new Product
                               {
-                                  Name = "Mens T Shirt",
+                                  Name = "Mens Fitness Shirt",
                                   Price = 16.99M,
                                   Description = "Plain mens t shirt with high quality fabric",
                                   InStock = true,
                                   Category = Categories["Mens"],
-                                  ImageUrl = "/images/mensTshirt1.jpg",
+                                  ImageUrl = "/images/MensFitnessShirt5.jpg",
                                   IsProductOfTheWeek = true
                               },
             new Product
             {
-                Name = "Mens Jacket",
+                Name = "Mens Fitness Shirt",
                 Price = 36.99M,
-                Description = "Plain mens jacket with high quality fabric",
+                Description = "Plain mens shirt with high quality fabric",
                 InStock = true,
                 Category = Categories["Mens"],
-                ImageUrl = "/images/mensJacket.jpg",
+                ImageUrl = "/images/MensFitnessShirt4.jpg",
                 IsProductOfTheWeek = true
             },
             new Product
             {
 
-                Name = "Womens T Shirt",
+                Name = "Mens Fitness Shirt",
                 Price = 16.99M,
-                Description = "Plain womens t shirt with high quality fabric",
+                Description = "Plain mens t shirt with high quality fabric",
                 InStock = true,
-                Category = Categories["Womens"],
-                ImageUrl = "/images/womensTshirt1.jpg",
+                Category = Categories["Mens"],
+                ImageUrl = "/images/MensFitnessShirt3.jpg",
                 IsProductOfTheWeek = true
             },
             new Product
             {
 
-                Name = "Womens Jacket",
+                Name = "Womens Yoga Set",
                 Price = 36.99M,
-                Description = "Plain womens jacket with high quality fabric",
+                Description = "Plain womens set with high quality fabric",
                 InStock = true,
                 Category = Categories["Womens"],
-                ImageUrl = "/images/womensJacket.jpg",
+                ImageUrl = "/images/WomensSet.jpg",
                 IsProductOfTheWeek = true
             },
             new Product
             {
-                Name = "Mens ring",
+                Name = "Womens Yoga Set",
                 Price = 26.99M,
-                Description = "Plain mens ring with high quality material",
+                Description = "Plain womens set with high quality material",
                 InStock = true,
-                Category = Categories["Accessories"],
-                ImageUrl = "/images/mensRing.jpg",
+                Category = Categories["Womens"],
+                ImageUrl = "/images/WomensSet2.jpg",
                 IsProductOfTheWeek = true
 
             },
             new Product
             {
 
-                Name = "Womens ring",
+                Name = "Womens Yoga Set",
                 Price = 26.99M,
-                Description = "Plain womens ring with high quality material",
+                Description = "Plain womens set with high quality material",
+                InStock = true,
+                Category = Categories["Womens"],
+                ImageUrl = "/images/WomensSet3.jpg",
+                IsProductOfTheWeek = true
+
+
+            }, new Product
+            {
+
+                Name = "Weights",
+                Price = 26.99M,
+                Description = "High quality weights in various sizes",
                 InStock = true,
                 Category = Categories["Accessories"],
-                ImageUrl = "/images/womensRing1.jpg",
+                ImageUrl = "/images/WeightsPic2.jpg",
+                IsProductOfTheWeek = true
+
+
+            }, new Product
+            {
+
+                Name = "Weights",
+                Price = 26.99M,
+                Description = "High quality weights in various sizes",
+                InStock = false,
+                Category = Categories["Accessories"],
+                ImageUrl = "/images/WeightsPic.jpg",
                 IsProductOfTheWeek = true
 
 
