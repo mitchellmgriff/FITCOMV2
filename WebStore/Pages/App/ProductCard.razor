@@ -1,0 +1,10 @@
+﻿
+    
+        <img src="@Product?.ImageUrl" alt="">
+        <div class="caption">
+            @Product?.Price.ToString("c")
+            <h3>
+                <a href="/product/details/@Product?.ProductId">@Product?.Name</a>
+            </h3>
+            <p>@Product?.Description</p>
+    </div>

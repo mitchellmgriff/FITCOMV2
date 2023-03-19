@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebStore.Models
 {
-    public class WebStoreDbContext : DbContext
+    public class WebStoreDbContext : IdentityDbContext
     {
 
         public WebStoreDbContext(DbContextOptions<WebStoreDbContext> options) : base(options) { }

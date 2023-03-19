@@ -5,7 +5,8 @@
 
         IEnumerable<Product> AllProducts { get; }
         IEnumerable<Product> ProductOfTheWeek { get; }
-
         Product? GetProductById(int productId);
+        IEnumerable<Product> SearchProducts(string searchQuery);
+
     }
 }

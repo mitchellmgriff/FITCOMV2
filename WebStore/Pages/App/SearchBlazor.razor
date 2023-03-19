@@ -1,0 +1,44 @@
+﻿@page "/app/search"
+@page "/app"
+
+<h3>Search products</h3>
+
+hello
+
+
+    <input class="mt-auto" @bind-value="SearchText"
+           @bind-value:event="oninput" placeholder="Search by product name" @onkeyup="Search" />
+
+
+
+@if (!FilteredProducts.Any())
+{
+    <p>Nothing to show, sorry...</p>
+    @if (SearchText.Length < 3)
+    {
+        <p>Make sure to enter at least 3 characters to search!</p>
+    }
+}
+else
+{
+    
+        @foreach (var product in FilteredProducts)
+        {
+            @* <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                <img src="@pie.ImageThumbnailUrl" alt="">
+                <div class="caption">
+                <h3 class="pull-right">@pie.Price.ToString("c")</h3>
+                <h3>
+                <a href="/pie/details/@pie.PieId">@pie.Name</a>
+                </h3>
+                <p>@pie.ShortDescription</p>
+                </div>
+
+                </div>
+                </div>*@
+            <ProductCard Product=@product></ProductCard>
+        }
+  
+}
+

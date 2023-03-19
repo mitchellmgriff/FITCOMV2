@@ -31,5 +31,9 @@ namespace WebStore.Models
         {
             return _webStoreDbContext.Products.FirstOrDefault(p => p.ProductId == productId);
         }
+        public IEnumerable<Product> SearchProducts(string searchQuery)
+        {
+            return _webStoreDbContext.Products.Where(p => p.Name.Contains(searchQuery));
+        }
     }
 }

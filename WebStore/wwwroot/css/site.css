@@ -32,7 +32,21 @@ body {
 body{
    background-color:#C0B3A0;
 }
-
+.new{
+    margin-left:170px;
+}
+hr{
+    margin-left: 150px;
+}
+.content {
+    position:relative;
+}
+.img-content {
+    position:absolute;
+    top: 87%;
+    display: inline-flex;
+    right:37%;
+}
 .banner{
     margin-top:87px;
     width:100%;
@@ -59,7 +73,7 @@ body{
 }
 .view {
     width: 100%;
-    color:black;
+    
     
 }
 .header {
@@ -68,16 +82,34 @@ body{
 }
 .nav-item {
     color: #22252C;
+    
 }
 
 .login {
-    margin-left: 750px;
+    margin-left: 120%;
+    
 }
 .pic {
     width: 270px;
     height: 380px;
+    
 }
 .shop {
     margin-left: 80px;
 }
-
+.product-of-the-week{
+   margin-left:10%;
+}
+.picture {
+    margin-left:12%;
+}
+.nav-item-login{
+  
+}
+.loginpage{
+    margin-left:400px;
+}
+.icon{
+    margin-left:1170px;
+    position:absolute;
+}

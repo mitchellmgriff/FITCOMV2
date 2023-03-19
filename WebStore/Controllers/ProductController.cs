@@ -15,10 +15,26 @@ namespace WebStore.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        public ActionResult List()
+        public ActionResult List(string category)
         {
-            ProductListViewModel productsListViewModel = new ProductListViewModel(_productRepository.AllProducts, "Mens");
-            return View(productsListViewModel);
+            IEnumerable<Product> products;
+            string? currentCategory;
+            if (string.IsNullOrWhiteSpace(category))
+            {
+                products = _productRepository.AllProducts.OrderBy(p => p.ProductId);
+                currentCategory = "All Products";
+            }
+            else
+            {
+                products = _productRepository.AllProducts.Where(p => p.Category.CategoryName == category)
+                    .OrderBy(p => p.ProductId);
+                currentCategory = _categoryRepository.AllCategories.FirstOrDefault(c => c.CategoryName == category)?.CategoryName;
+            }
+
+            return View(new ProductListViewModel(products, currentCategory));
+
+            //ProductListViewModel productsListViewModel = new ProductListViewModel(_productRepository.AllProducts, "Mens");
+            // return View(productsListViewModel);
         }
 
         public ActionResult Details(int id)
@@ -28,5 +44,10 @@ namespace WebStore.Controllers
                 return NotFound();
             return View(product);
         }
+        public IActionResult Search()
+        {
+            return View();
+        }
+
     }
 }

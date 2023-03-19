@@ -51,23 +51,14 @@
                                 <a asp-controller="Contact" asp-action="Index" class="nav-link">Contact</a>
                             </li>
 
-                          
-                            <div class="login row">
-                                <div class="col-4">  <vc:shopping-cart-summary></vc:shopping-cart-summary></div>
-                                <div class="col-4">
+                          <li class="container-fluid ">
+                              <vc:shopping-cart-summary></vc:shopping-cart-summary></div>
+                                </li>
                                     
-                            <li class="nav-item">
-                                  <a asp-controller="Home" asp-action="Index" class="nav-link">Login</a>
-                            </li>
-                    </div>
-
-                    <div class="col-4">
-                            <li class="nav-item">
-                                <a asp-controller="Product" asp-action="List" class="nav-link">Register</a>
-                        </li>
+                            <partial name="_LoginPartial"/>
                         
-                    </div>
-                    </div>
+                    
+                   
                           
                            
                             </ul>
@@ -77,6 +68,7 @@
                 </nav>
 
                 </header>
+                
 
 
 
@@ -87,7 +79,7 @@
 
 
     @RenderBody()
-
+    @RenderSection("Scripts", required: false)
   
 
 
