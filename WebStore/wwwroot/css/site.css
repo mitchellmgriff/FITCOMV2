@@ -41,6 +41,10 @@ hr{
 .content {
     position:relative;
 }
+.categories {
+    margin-top:150px;
+    margin-right:20px;
+}
 .img-content {
     position:absolute;
     top: 87%;
@@ -48,10 +52,28 @@ hr{
     right:37%;
 }
 .banner{
-    margin-top:87px;
-    width:100%;
-    height:350px;
+    margin-left:10%;
+    margin-top:70px;
+    width:80%;
+    padding: 15px;
+    height:270px;
 
+
+}
+.nav-tabs {
+    margin-left:11%;
+}
+.aboutus{
+    position:absolute;
+    top:108px;
+    margin-left:527px;
+    width:500px;
+    height:150px;
+}
+.about {
+    padding:50px;
+    
+    background-color: #efd9c1;
 }
 .price {
     color: #22252C;
@@ -66,6 +88,23 @@ hr{
     background-color:#efd9c1;
     width: 270px;
     margin-left: 10%; 
+}
+.card-nav {
+    position: absolute;
+   
+    display: inline-table;
+    width: 10%;
+    background: #000000; /* fallback for old browsers */
+    color: white;
+    height: 100%;
+    padding-top: 30px;
+}
+.nav-line{
+    background-color: white;
+    position:absolute;
+}
+.card-top-nav{
+  padding-right:10px;
 }
 .shopping-cart-card {
     width: 70%;
@@ -102,6 +141,7 @@ hr{
 }
 .picture {
     margin-left:12%;
+   
 }
 .nav-item-login{
   

@@ -1,8 +1,39 @@
 ﻿
 @model WebStore.ViewModels.ProductListViewModel
 
+
 <h1>@Model.CurrentCategory</h1>
-<div class="row row-cols-1 row-cols-md-3 g-4 mt-1 picture">
+<br />
+<div class="card-nav shadow-lg bg-gradient">
+    <div class="card-top-nav text-white">
+       __________________
+        
+       
+    </div>
+   <div class="card-body">
+        <input type="checkbox" /> Mens
+    <br />
+        <input type="checkbox" /> Womens
+        <br />
+        <input type="checkbox" /> Accessories
+    <br />
+    _______________
+    </div>
+    <div class="card-footer"> 
+   <input type="checkbox" />
+   In stock
+        <br /> _______________<br />
+   Price
+   <br />
+        <input type="checkbox" /> $0-$20<br />
+        <input type="checkbox" /> $20-$50<br />
+        <input type="checkbox" /> $50+
+
+        _______________
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-1 picture shadow-lg bg-opacity-25 bg-dark p-2">
+
     <br />
 
     @foreach (var product in Model.Products)
